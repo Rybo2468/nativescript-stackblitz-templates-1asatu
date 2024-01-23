@@ -1,0 +1,24 @@
+<Page><!-- represents screens that user can navigate to-->
+  <StackLayout>
+  <StackLayout orientation= "horizontal"><!-- arrange UI components one after another, either vertically or horizontally -->
+  <Label text="Hello, it's first NativeScript App. Make sure you download NativeScript Preview App on your phone."   textAlignment="center" textWrap="true" width="60" />
+
+  <Label backgroundColor= "Black" width="70"
+    textWrap="true" verticalAlignment="center">
+    <FormattedString>
+      <Span text="This message has a " />
+      <Span text="blue " style="color:blue;"/>
+      <Span text="text." />
+    </FormattedString>
+  </Label>
+  <Button text="Click" isEnabled="true" tap="onTap" />
+
+  </StackLayout>
+  <GridLayout colums="50, auto, *"rows="100, 100, *">
+  <Label text="1" row="0" col="0" backgroundColor="auqa"/>
+<Label text="second" row="0" col="1" />
+<Label text= "3" row= "1" col="2" backgroundColor="orange" />
+<Label text= "4" row="2" col="1"/> 
+    </GridLayout>
+    </StackLayout>
+</Page>
